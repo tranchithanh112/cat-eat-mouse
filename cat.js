@@ -13,8 +13,10 @@ cat.prototype.eat= function(mouse){
     this.stomach.push(mouse);
     mouse.die();
 }
+var mickey =new mouse('mickey','pink');
 var jerry = new mouse('jerry','orange');
 var tom =new cat();
 tom.eat(jerry);
+tom.eat(mickey);
 console.log(tom);
-console.log(jerry);
+
